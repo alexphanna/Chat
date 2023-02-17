@@ -1,7 +1,6 @@
 import java.net.*;
 import java.awt.*;
 import java.awt.event.*;
-import Modern;
 public class Server {
     private Frame frame;
     private DatagramSocket socket;
