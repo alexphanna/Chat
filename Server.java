@@ -13,6 +13,7 @@ public class Server {
     public Server() throws Exception {
         setFrame(new Frame("Server"));
         getFrame().setResizable(false);
+        getFrame().addWindowListener(new WindowCloser());
 
         Panel panel = new Panel(null);
         panel.setPreferredSize(new Dimension(275, 125));

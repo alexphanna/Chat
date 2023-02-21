@@ -12,6 +12,7 @@ public class Client {
     public Client() throws UnknownHostException {
         setFrame(new Frame("Client"));
         getFrame().setResizable(false);
+        getFrame().addWindowListener(new WindowCloser());
 
         Panel panel = new Panel(null);
         panel.setPreferredSize(new Dimension(275, 125));
